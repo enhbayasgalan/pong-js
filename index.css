@@ -1,0 +1,99 @@
+/* Game container */
+#gameContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("/Users/24LP4462/Downloads/Earth-Space-Wallpaper-4K-38038.jpg");
+    background-size: 100% 100%;
+    box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+  }
+   
+  /* Game board (Canvas) */
+  #gameBoard {
+    border: 3px solid #00ffff;
+    box-shadow: 0 0 15px 5px rgba(0, 255, 255, 0.7);
+    background-color: black;
+    margin-bottom: 20px;
+    position: absolute;
+    display: block;
+  }
+   
+  /* Score text */
+  #scoreText {
+    font-family: "Consolas", monospace;
+    font-size: 100px;
+    color: #00ffff;
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 0 0 40px rgba(0, 255, 255, 0.6),
+      0 0 60px rgba(0, 255, 255, 0.5);
+    margin: 20px 0;
+    position: absolute;
+    display: none;
+  }
+  #buttonDiv {
+    display: flex;
+    position: absolute;
+    gap: 20px;
+    top: 700px;
+    display: none;
+  }
+   
+  /* Reset button */
+  #resetBtn {
+    font-size: 22px;
+    width: 120px;
+    height: 50px;
+    border: 4px solid #00ffff;
+    border-radius: 15px;
+    background-color: black;
+    color: #00ffff;
+    cursor: pointer;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+  }
+   
+  /* Hover effect for reset button */
+  #resetBtn:hover {
+    box-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff;
+    transform: scale(1.1);
+  }
+   
+  /* Ball */
+  #ball {
+    fill: #00ffff;
+    stroke: #000000;
+    box-shadow: 0 0 15px #00ffff;
+  }
+  /* button bot and player vs player */
+   
+  #botAndPlayer {
+    font-size: 12px;
+    width: 120px;
+    height: 50px;
+    border: 4px solid #00ffff; /* Neon blue border */
+    border-radius: 15px;
+    background-color: black;
+    color: #00ffff; /* Neon blue text */
+    cursor: pointer;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; /* Glowing text */
+    transition: all 0.3s ease-in-out;
+    outline: none; /* Remove default button outline */
+  }
+  #hid {
+    visibility: hidden;
+    display: none;
+  }
+  #botAndPlayer:hover {
+    box-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff; /* Stronger glow on hover */
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+  }
